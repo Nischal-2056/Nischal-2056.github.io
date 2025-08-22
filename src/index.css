@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Classic & Professional Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Classic Professional Color Palette */
+    --background: 0 0% 100%;        /* Pure white */
+    --foreground: 222 47% 11%;      /* Deep navy text */
+    
+    /* Primary Colors - Navy Blue */
+    --primary: 217 91% 20%;         /* #0f172a - Classic navy */
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 217 91% 85%;
+    --primary-glow: 217 91% 60%;
+    
+    /* Secondary Colors - Slate Gray */
+    --secondary: 215 25% 27%;       /* #334155 - Professional slate */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-soft: 215 25% 85%;
+    
+    /* Accent Colors - Refined Blue */
+    --accent: 200 98% 39%;          /* #0284c7 - Professional blue */
+    --accent-foreground: 0 0% 100%;
+    --accent-soft: 200 98% 90%;
+    
+    /* UI Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --card-soft: 210 40% 98%;
+    
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 20%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Design System Values */
+    --radius: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    
+    /* Shadows */
+    --shadow-soft: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-glow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-elegant: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 20%), hsl(217 91% 30%));
+    --gradient-secondary: linear-gradient(135deg, hsl(215 25% 27%), hsl(215 25% 37%));
+    --gradient-subtle: linear-gradient(135deg, hsl(210 40% 98%), hsl(214 32% 91%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    
+    /* Animations */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 0 0% 100%;
+    
+    --primary: 200 98% 39%;
+    --primary-foreground: 222 47% 11%;
+    
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 217 91% 60%;
+    --accent-foreground: 222 47% 11%;
+    
+    --card: 215 28% 17%;
+    --card-foreground: 0 0% 100%;
+    --card-soft: 215 28% 20%;
+    
+    --muted: 215 28% 17%;
+    --muted-foreground: 217 10% 64%;
+    
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 200 98% 39%;
+  }
+  
+  /* Typography */
+  .font-display {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+  }
+  
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus styles */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer components {
+  /* Button Variants */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium shadow-md hover:shadow-lg transition-all duration-200 hover:bg-primary/90;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-medium shadow-sm hover:shadow-md transition-all duration-200 hover:bg-secondary/90;
+  }
+  
+  .btn-ghost {
+    @apply bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-200;
+  }
+  
+  /* Card Styles */
+  .card-warm {
+    @apply bg-card border border-border rounded-xl p-6 shadow-soft hover:shadow-glow transition-all duration-200;
+  }
+  
+  .card-glow {
+    @apply bg-card border border-border rounded-xl p-6 shadow-glow hover:shadow-elegant transition-all duration-200;
+  }
+  
+  /* Skill Badge */
+  .skill-badge {
+    @apply bg-muted text-foreground px-3 py-1 rounded-md text-sm font-medium border border-border hover:border-primary/30 transition-all duration-200;
+  }
+  
+  /* Animations */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-bounce-gentle {
+    animation: bounce-gentle 2s ease-in-out infinite;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .animate-slide-in-left {
+    animation: slide-in-left 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-warm {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(8px);
+    background: hsl(var(--background) / 0.95);
+    border: 1px solid hsl(var(--border));
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes fade-in-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
