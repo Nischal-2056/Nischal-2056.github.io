@@ -19,6 +19,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base:'/'
+basePath: "",       // 👈 leave blank because your repo = username.github.io
+  assetPrefix: ""
   
 }));

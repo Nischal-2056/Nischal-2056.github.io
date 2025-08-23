@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { ExternalLink, Github, X, TrendingUp } from "lucide-react";
-import analyticsProject from "@/assets/project-analytics.jpg";
-import mlProject from "@/assets/project-ml.jpg";
-import insightsProject from "@/assets/project-insights.jpg";
+import analyticsProject from "../assets/project-analytics.jpg";
+import mlProject from "../assets/project-ml.jpg";
+import insightsProject from "../assets/project-insights.jpg";
 
 interface Project {
   id: number;
