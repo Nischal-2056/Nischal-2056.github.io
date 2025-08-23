@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-base: "/Nischal-2056.github.io/",       
+base: "/",       
   
   
 }));
