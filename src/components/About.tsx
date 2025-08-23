@@ -2,15 +2,15 @@ import { Calendar, MapPin, Award, Users, Target, Shield } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { number: "5+", label: "Years Experience", icon: Calendar },
-    { number: "50+", label: "Projects Shipped", icon: Target },
+    { number: "5", label: "Years Experience", icon: Calendar },
+    { number: "5", label: "Projects Shipped", icon: Target },
     { number: "8", label: "Industries", icon: Users },
     { number: "15+", label: "Awards", icon: Award },
   ];
 
   const timeline = [
     {
-      year: "2024",
+      year: "2022",
       title: "Senior Data Analyst",
       company: "TechFlow Inc.",
       description: "Leading AI-driven analytics initiatives"
