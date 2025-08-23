@@ -1,5 +1,5 @@
 import { ChevronDown, Heart, Sparkles } from "lucide-react";
-import heroAvatar from "@/assets/hero-avatar.jpg";
+import heroAvatar from "/assets/hero-avatar.jpg";
 
 const Hero = () => {
   return (
