@@ -9,53 +9,57 @@ const Hero = () => {
     >
       {/* Animated background shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 bg-secondary/20 rounded-full animate-bounce-gentle"></div>
-        <div className="absolute bottom-40 left-1/4 w-12 h-12 bg-accent/30 rounded-full animate-float"></div>
-        <div className="absolute bottom-20 right-1/3 w-24 h-24 bg-primary/10 rounded-full animate-bounce-gentle"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-cyan-500 rounded-full animate-float"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 bg-black rounded-full animate-bounce-gentle"></div>
+        <div className="absolute bottom-40 left-1/4 w-12 h-12 bg-indigo-500 rounded-full animate-float"></div>
+        <div className="absolute bottom-20 right-1/3 w-24 h-24 bg-blue-400 rounded-full animate-bounce-gentle"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in-up">
           {/* Avatar */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative">
-              <img
+          <div className="mb-8  flex justify-center">
+            <div className="relative border ">
+              {/* <img
                 src={heroAvatar}
                 alt="Alex Chen - Data Analyst Avatar"
-                className="w-32 h-32 rounded-full shadow-glow border-4 border-primary/20 animate-bounce-gentle"
-              />
+                className="h-80px  shadow-glow border-4 border-primary/20 animate-bounce-gentle"
+              /> */}
               <div className="absolute -top-2 -right-2 bg-accent p-2 rounded-full animate-bounce-gentle">
-                <Sparkles className="w-4 h-4 text-accent-foreground" />
+                <Sparkles className="w-4 h-4  border-10   text-accent-foreground" />
               </div>
             </div>
           </div>
 
           {/* Main content */}
           <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 text-gradient-primary">
-           Nischal BAsnet 
+            Nischal Basnet
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-medium">
-            Data Analyst · AI Enthusiast · Storyteller
+            Data Analyst · AI Enthusiast
           </p>
-          
+
           <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto text-foreground/80 flex items-center justify-center gap-2">
             <Heart className="w-5 h-5 text-primary animate-bounce-gentle" />
-            "Turning messy data into lovable insights."
+            "Turning messy data into impactful insights."
             <Heart className="w-5 h-5 text-primary animate-bounce-gentle" />
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <button
+            {/* <button
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               className="btn-hero"
             >
               View My Work
-            </button>
+            </button> */}
             <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="btn-ghost"
             >
               Get In Touch
@@ -64,9 +68,9 @@ const Hero = () => {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-8  right-1/2 transform -translate-x-1/2 animate-bounce">
           <ChevronDown className="w-8 h-8 text-muted-foreground" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Linkedin, url: "#linkedin", label: "LinkedIn" },
     { icon: Github, url: "#github", label: "GitHub" },
-    { icon: Mail, url: "mailto:alex.chen@email.com", label: "Email" }
+    { icon: Mail, url: "", label: "Email" }
   ];
 
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Bio */}
           <div className="mb-8">
             <h3 className="font-display text-xl font-bold text-gradient-primary mb-3">
-              Alex Chen
+              Nischal Basnet
             </h3>
             <p className="text-muted-foreground max-w-md mx-auto">
               Passionate data analyst turning complex information into lovable insights 
@@ -47,7 +47,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-sm text-muted-foreground">
-            <span>© {currentYear} Alex Chen. All rights reserved.</span>
+            <span>© {currentYear} NB. All rights reserved.</span>
             <div className="hidden sm:block">•</div>
             <div className="flex items-center gap-1">
               <span>Made with</span>

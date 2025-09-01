@@ -45,21 +45,21 @@ const Contact = () => {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "#linkedin",
-      color: "hover:text-[#0077B5]"
+      url: "https://www.linkedin.com/in/nischal-basnet-37ba23261/",
+      color: "hover:text-[#0077B5]",
     },
     {
       name: "GitHub",
       icon: Github,
-      url: "#github",
-      color: "hover:text-foreground"
+      url: "https://github.com/Nischal-2056",
+      color: "hover:text-foreground",
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:alex.chen@email.com",
-      color: "hover:text-primary"
-    }
+      url: "nischal.bh23@gmail.com",
+      color: "hover:text-primary",
+    },
   ];
 
   return (
@@ -203,7 +203,7 @@ const Contact = () => {
                           {link.name}
                         </div>
                         <div className="text-sm text-muted-foreground">
-                          {link.name === "Email" ? "alex.chen@email.com" : 
+                          {link.name === "Email" ? "nischal.bh23@gmail.com" : 
                            link.name === "LinkedIn" ? "Connect professionally" : 
                            "Check out my code"}
                         </div>
@@ -215,7 +215,7 @@ const Contact = () => {
             </div>
 
             {/* Quick Info */}
-            <div className="card-warm">
+            {/* <div className="card-warm">
               <h4 className="font-display text-lg font-semibold mb-4 text-foreground">
                 Quick Info ⚡
               </h4>
@@ -226,7 +226,7 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Timezone:</span>
-                  <span className="font-medium text-foreground">PST (UTC-8)</span>
+                  <span className="font-medium text-foreground"> (UTC-6)</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Availability:</span>
@@ -237,7 +237,7 @@ const Contact = () => {
                   <span className="font-medium text-foreground">Email or LinkedIn</span>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* CTA */}
             <div className="card-glow text-center">
@@ -248,9 +248,9 @@ const Contact = () => {
                 Whether it's a quick consultation or a long-term partnership, 
                 I'm excited to help turn your data into actionable insights.
               </p>
-              <div className="text-xs text-muted-foreground">
+              {/* <div className="text-xs text-muted-foreground">
                 💡 Free 30-minute consultation available for new projects
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

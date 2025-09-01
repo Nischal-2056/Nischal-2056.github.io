@@ -2,37 +2,31 @@ import { Calendar, MapPin, Award, Users, Target, Shield } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { number: "5", label: "Years Experience", icon: Calendar },
-    { number: "5", label: "Projects Shipped", icon: Target },
-    { number: "8", label: "Industries", icon: Users },
-    { number: "15+", label: "Awards", icon: Award },
+    { number: "3", label: "Years Experience", icon: Calendar },
+    { number: "4", label: "Projects Shipped", icon: Target },
+    { number: "2", label: "Industries", icon: Users },
+    
   ];
 
   const timeline = [
     {
-      year: "2022",
-      title: "Senior Data Analyst",
-      company: "TechFlow Inc.",
-      description: "Leading AI-driven analytics initiatives"
+      year: "2024",
+      title: "Developer",
+      company: "Five Eye Geo Tech",
+      description: "Designed and developed a GIS-based web platform ",
+    },
+    {
+      year: "2023",
+      title: "Developer",
+      company: "CareInfo Solutions",
+      description: "Built a dynamic listing platform ",
     },
     {
       year: "2022",
-      title: "Data Scientist",
-      company: "DataVision Labs",
-      description: "Developed ML models for customer insights"
+      title: "Intern",
+      company: "Elisha Engineeeing Works ",
+      description: "Assisted in software development ",
     },
-    {
-      year: "2020",
-      title: "MS in Data Science",
-      company: "Stanford University",
-      description: "Specialized in Machine Learning & AI Ethics"
-    },
-    {
-      year: "2019",
-      title: "Data Analyst",
-      company: "StartupX",
-      description: "Built analytics infrastructure from scratch"
-    }
   ];
 
   const values = [
@@ -68,7 +62,7 @@ const About = () => {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20 animate-fade-in-up">
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-6 mb-20 animate-fade-in-up">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             return (
@@ -97,7 +91,7 @@ const About = () => {
             </h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Started as a curious analyst who believed data could tell better stories. Over the years, 
-              I've specialized in making AI accessible and ethical, working across healthcare, fintech, 
+              I've specialized in making AI accessible and ethical, working across  fintech, 
               and e-commerce industries.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -106,7 +100,7 @@ const About = () => {
             </p>
             <div className="flex items-center text-muted-foreground">
               <MapPin className="w-5 h-5 mr-2 text-primary" />
-              San Francisco, CA · Remote-friendly
+              Kathmandu , Nepal · Remote-friendly
             </div>
           </div>
 

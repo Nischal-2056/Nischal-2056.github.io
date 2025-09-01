@@ -23,14 +23,9 @@ const Resume = () => {
               </div>
             </div>
             
-            <h3 className="font-display text-2xl font-bold mb-4 text-foreground">
-              Professional Resume
-            </h3>
+           
             
-            <p className="text-muted-foreground mb-8 leading-relaxed">
-              Comprehensive overview of my professional journey including detailed project descriptions, 
-              technical skills, educational background, and key achievements in data analysis and AI.
-            </p>
+           
 
             <div className="space-y-4 mb-8">
               <div className="grid grid-cols-2 gap-4 text-sm">
@@ -54,8 +49,8 @@ const Resume = () => {
             </div>
 
             <a
-              href="#resume-download"
-              download="Alex-Chen-Data-Analyst-Resume.pdf"
+              href="CV.pdf"
+              download="Nischalcv.pdf"
               className="btn-hero inline-flex items-center gap-3 text-lg px-8 py-4"
             >
               <Download className="w-5 h-5" />

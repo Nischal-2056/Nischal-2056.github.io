@@ -61,45 +61,45 @@ const Projects = () => {
       liveUrl: "#",
       description: "NLP-driven content analysis and optimization platform for improved audience engagement"
     },
-    {
-      id: 4,
-      title: "Supply Chain Optimization Model",
-      outcome: "Optimized logistics reducing costs by $1.8M annually",
-      tools: ["R", "Shiny", "SQL Server", "Excel"],
-      thumbnail: analyticsProject,
-      problem: "Manufacturing company faced inefficient inventory management and high logistics costs due to poor demand forecasting and route optimization.",
-      approach: "Built predictive models for demand forecasting, inventory optimization algorithms, and route efficiency analysis. Created interactive Shiny dashboard for operations team.",
-      impact: ["💰 $1.8M annual cost reduction", "↓ Inventory costs by 28%", "↑ Delivery efficiency by 35%"],
-      githubUrl: "#",
-      liveUrl: "#",
-      description: "Advanced analytics solution for supply chain optimization and demand forecasting"
-    },
-    {
-      id: 5,
-      title: "Healthcare Data Privacy Framework",
-      outcome: "Enabled secure analytics while maintaining 100% HIPAA compliance",
-      tools: ["Python", "Differential Privacy", "Docker", "Kubernetes"],
-      thumbnail: mlProject,
-      problem: "Healthcare client needed to perform analytics on sensitive patient data while ensuring complete privacy compliance and regulatory requirements.",
-      approach: "Implemented differential privacy techniques, secure multi-party computation, and privacy-preserving machine learning. Built containerized solution with audit trails.",
-      impact: ["🔒 100% HIPAA compliance maintained", "↑ Analytics capability unlocked", "✅ Zero privacy incidents"],
-      githubUrl: "#",
-      liveUrl: "#",
-      description: "Privacy-first analytics framework enabling secure healthcare data analysis"
-    },
-    {
-      id: 6,
-      title: "Social Impact Measurement Tool",
-      outcome: "Helped 50+ nonprofits quantify their impact with data",
-      tools: ["Tableau", "Python", "Google Analytics", "Survey APIs"],
-      thumbnail: insightsProject,
-      problem: "Nonprofit organizations struggled to measure and communicate their social impact effectively, hindering fundraising and program improvement efforts.",
-      approach: "Created comprehensive impact measurement framework combining quantitative metrics with qualitative storytelling. Built automated reporting system for stakeholders.",
-      impact: ["📊 50+ nonprofits empowered", "↑ Funding success rate by 45%", "💡 Data-driven program improvements"],
-      githubUrl: "#",
-      liveUrl: "#",
-      description: "Comprehensive platform for measuring and visualizing social impact in nonprofit organizations"
-    }
+    // {
+    //   id: 4,
+    //   title: "Supply Chain Optimization Model",
+    //   outcome: "Optimized logistics reducing costs by $1.8M annually",
+    //   tools: ["R", "Shiny", "SQL Server", "Excel"],
+    //   thumbnail: analyticsProject,
+    //   problem: "Manufacturing company faced inefficient inventory management and high logistics costs due to poor demand forecasting and route optimization.",
+    //   approach: "Built predictive models for demand forecasting, inventory optimization algorithms, and route efficiency analysis. Created interactive Shiny dashboard for operations team.",
+    //   impact: ["💰 $1.8M annual cost reduction", "↓ Inventory costs by 28%", "↑ Delivery efficiency by 35%"],
+    //   githubUrl: "#",
+    //   liveUrl: "#",
+    //   description: "Advanced analytics solution for supply chain optimization and demand forecasting"
+    // },
+    // {
+    //   id: 5,
+    //   title: "Healthcare Data Privacy Framework",
+    //   outcome: "Enabled secure analytics while maintaining 100% HIPAA compliance",
+    //   tools: ["Python", "Differential Privacy", "Docker", "Kubernetes"],
+    //   thumbnail: mlProject,
+    //   problem: "Healthcare client needed to perform analytics on sensitive patient data while ensuring complete privacy compliance and regulatory requirements.",
+    //   approach: "Implemented differential privacy techniques, secure multi-party computation, and privacy-preserving machine learning. Built containerized solution with audit trails.",
+    //   impact: ["🔒 100% HIPAA compliance maintained", "↑ Analytics capability unlocked", "✅ Zero privacy incidents"],
+    //   githubUrl: "#",
+    //   liveUrl: "#",
+    //   description: "Privacy-first analytics framework enabling secure healthcare data analysis"
+    // },
+    // {
+    //   id: 6,
+    //   title: "Social Impact Measurement Tool",
+    //   outcome: "Helped 50+ nonprofits quantify their impact with data",
+    //   tools: ["Tableau", "Python", "Google Analytics", "Survey APIs"],
+    //   thumbnail: insightsProject,
+    //   problem: "Nonprofit organizations struggled to measure and communicate their social impact effectively, hindering fundraising and program improvement efforts.",
+    //   approach: "Created comprehensive impact measurement framework combining quantitative metrics with qualitative storytelling. Built automated reporting system for stakeholders.",
+    //   impact: ["📊 50+ nonprofits empowered", "↑ Funding success rate by 45%", "💡 Data-driven program improvements"],
+    //   githubUrl: "#",
+    //   liveUrl: "#",
+    //   description: "Comprehensive platform for measuring and visualizing social impact in nonprofit organizations"
+    // }
   ];
 
   const openModal = (project: Project) => {

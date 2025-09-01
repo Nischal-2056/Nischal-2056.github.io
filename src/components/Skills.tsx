@@ -18,7 +18,7 @@ const Skills = () => {
       skills: [
         { name: "Python", icon: Code, tier: 5 },
         { name: "SQL", icon: Database, tier: 5 },
-        { name: "R", icon: Calculator, tier: 4 },
+
         { name: "Excel", icon: FileText, tier: 5 },
       ],
     },
@@ -27,8 +27,6 @@ const Skills = () => {
       skills: [
         { name: "Tableau", icon: BarChart3, tier: 5 },
         { name: "Power BI", icon: PieChart, tier: 4 },
-        { name: "Plotly", icon: TrendingUp, tier: 4 },
-        { name: "Matplotlib", icon: BarChart3, tier: 4 },
       ],
     },
     {
@@ -36,7 +34,7 @@ const Skills = () => {
       skills: [
         { name: "Machine Learning", icon: Brain, tier: 4 },
         { name: "Statistics", icon: Calculator, tier: 5 },
-        { name: "A/B Testing", icon: Zap, tier: 4 },
+
         { name: "ETL", icon: Database, tier: 4 },
       ],
     },
@@ -44,8 +42,7 @@ const Skills = () => {
       title: "Tools & Workflow",
       skills: [
         { name: "Git", icon: GitBranch, tier: 4 },
-        { name: "Docker", icon: Code, tier: 3 },
-        { name: "AWS", icon: Database, tier: 3 },
+
         { name: "Jupyter", icon: FileText, tier: 5 },
       ],
     },
@@ -80,13 +77,13 @@ const Skills = () => {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-fade-in-up">
+        <div className="grid md:grid-cols-2  lg:grid-cols-4 gap-8 animate-fade-in-up">
           {skillCategories.map((category) => (
             <div key={category.title} className="card-warm">
               <h3 className="font-display text-lg font-semibold mb-6 text-foreground">
                 {category.title}
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {category.skills.map((skill) => {
                   const IconComponent = skill.icon;
                   return (
@@ -112,7 +109,7 @@ const Skills = () => {
         {/* Skill Badges */}
         <div className="mt-16 animate-fade-in-up">
           <h3 className="font-display text-2xl font-semibold mb-8 text-center text-foreground">
-            Lovable Skill Badges
+            Skill Badges
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {skillCategories.flatMap((category) =>

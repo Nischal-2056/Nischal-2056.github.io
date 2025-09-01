@@ -9,7 +9,7 @@ const Navbar = () => {
     { id: "hero", label: "Home" },
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
-    { id: "projects", label: "Projects" },
+    // { id: "projects", label: "Projects" },
     { id: "resume", label: "Resume" },
     { id: "contact", label: "Contact" },
   ];
@@ -41,12 +41,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass-effect backdrop-blur-md">
+    <nav className="fixed top-0 left-0 right-0 z-50   glass-effect backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="font-display text-2xl font-bold text-gradient-primary">
-            Alex Chen
+            NB
           </div>
 
           {/* Desktop Navigation */}
